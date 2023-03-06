@@ -12,7 +12,7 @@ class Entrevista:
         while idade != "00":
             genero = input("Digite o gênero: ") 
             try:
-                pergunta_1 = int(input("Você costuma ouvir música por estações de rádio? \n1. Sim\n2. Não\n3. Poucas vezes\nDigite: "))                 
+                pergunta_1 = int(input("Você costuma ouvir música por estações de rádio? \n1. Sim\n2. Não\n3. Poucas vezes\nOpção: "))                 
                 if (pergunta_1 == 1):
                     pergunta_1 = ("Sim")
                 elif (pergunta_1 == 2):
@@ -23,7 +23,7 @@ class Entrevista:
                 print("Opção inválida. Tente novamente.")
                 continue    
             try:
-                pergunta_2 = int(input("Você reserva um tempo do seu dia para ouvir suas músicas favoritas? \n1. Sim\n2. Não\n3. Poucas vezes \nDigite: "))
+                pergunta_2 = int(input("Você reserva um tempo do seu dia para ouvir suas músicas favoritas? \n1. Sim\n2. Não\n3. Poucas vezes \nOpção: "))
                 if (pergunta_2 == 1):
                     pergunta_2 = ("Sim")
                 elif (pergunta_2 == 2):
@@ -34,7 +34,7 @@ class Entrevista:
                 print("Opção inválida. Tente novamente.")
                 continue  
             try:    
-                pergunta_3 = int(input("Você costuma ouvir gêneros musicais variádos? \n1. Sim\n2. Não\n3. Poucas vezes\nDigite: "))
+                pergunta_3 = int(input("Você costuma ouvir gêneros musicais variádos? \n1. Sim\n2. Não\n3. Poucas vezes\nOpção: "))
                 if (pergunta_3 == 1):
                     pergunta_3 = ("Sim")
                 elif (pergunta_3 == 2):
@@ -45,7 +45,7 @@ class Entrevista:
                 print("Opção inválida. Tente novamente.")
                 continue  
             try:
-                pergunta_4 = int(input("Você usaria um app novo, no qual tocaria suas músicas favoritas? \n1. Sim\n2. Não\n3. Poucas vezes\nDigite: "))
+                pergunta_4 = int(input("Você usaria um app novo, no qual tocaria suas músicas favoritas? \n1. Sim\n2. Não\n3. Poucas vezes\nOpção: "))
                 if (pergunta_4 == 1):
                     pergunta_4 = ("Sim")
                 elif (pergunta_4 == 2):
