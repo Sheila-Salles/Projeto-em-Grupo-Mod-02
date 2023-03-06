@@ -14,3 +14,19 @@ ficar inserindo novas respostas por quanto tempo for necessário (quando a idade
 o projeto para de executar).
 ⇨ Com os dados preenchidos no .csv o grupo deve realizar uma exibição simples dos resultados
 utilizando o Excel 
+
+
+Como usar:
+
+Ao executar o arquivo main.py o questionário se iniciará, o usuário deverá inserir a idade e gênero e responder as questões com o teclado numérico, ao final do processo, o usuário escolherá entre continuar, digitando uma idade nova ou inseririndo 00 para finarlizar e salvar o arquivo csv.
+
+
+     Empresa: Tecnologia e Dados   
+
+Digite a idade: 21
+Digite o gênero: Feminino
+Você costuma ouvir música por estações de rádio? 
+1. Sim
+2. Não
+3. Poucas vezes
+Opção: 
