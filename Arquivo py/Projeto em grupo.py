@@ -8,13 +8,38 @@ class Entrevista:
 
     def dados(self):
         print("\n     Empresa: Tecnologia e Dados   \n")
-        idade = input("Digite a idade: ")
+        idade = (input("Digite a idade: "))
+           
         while idade != "00":
             genero = input("Digite o gênero: ")
-            pergunta_1 = input("Você costuma ouvir música por estações de rádio? \n1. Sim\n2. Não\n3. Poucas vezes\nDigite: ")                 
-            pergunta_2 = (input("Você reserva um tempo do seu dia para ouvir suas músicas favoritas? \n1. Sim\n2. Não\n3. Poucas vezes \nDigite: "))
-            pergunta_3 = (input("Você costuma ouvir gêneros musicais variádos? \n1. Sim\n2. Não\n3. Poucas vezes\nDigite: "))
-            pergunta_4 = (input("Você usaria um app novo, no qual tocaria suas músicas favoritas? \n1. Sim\n2. Não\n3. Poucas vezes\nDigite: "))
+            pergunta_1 = int(input("Você costuma ouvir música por estações de rádio? \n1. Sim\n2. Não\n3. Poucas vezes\nDigite: "))                 
+            if (pergunta_1 == 1):
+                pergunta_1 = ("Sim")
+            elif (pergunta_1 == 2):
+                pergunta_1 = ("Não")
+            elif (pergunta_1 == 3):
+                pergunta_1=("Poucas vezes")    
+            pergunta_2 = int(input("Você reserva um tempo do seu dia para ouvir suas músicas favoritas? \n1. Sim\n2. Não\n3. Poucas vezes \nDigite: "))
+            if (pergunta_2 == 1):
+                pergunta_2 = ("Sim")
+            elif (pergunta_2 == 2):
+                pergunta_2 = ("Não")
+            elif (pergunta_2 == 3):
+                pergunta_2=("Poucas vezes")    
+            pergunta_3 = int(input("Você costuma ouvir gêneros musicais variádos? \n1. Sim\n2. Não\n3. Poucas vezes\nDigite: "))
+            if (pergunta_3 == 1):
+                pergunta_3 = ("Sim")
+            elif (pergunta_3 == 2):
+                pergunta_3 = ("Não")
+            elif (pergunta_3 == 3):
+                pergunta_3=("Poucas vezes")    
+            pergunta_4 = int(input("Você usaria um app novo, no qual tocaria suas músicas favoritas? \n1. Sim\n2. Não\n3. Poucas vezes\nDigite: "))
+            if (pergunta_4 == 1):
+                pergunta_4 = ("Sim")
+            elif (pergunta_4 == 2):
+                pergunta_4 = ("Não")
+            elif (pergunta_4 == 3):
+                pergunta_4=("Poucas vezes")                
             now = datetime.datetime.now()
             data_hora = now.strftime("%d/%m/%Y %H:%M:%S")
             lista = [idade, genero, pergunta_1, pergunta_2, pergunta_3, pergunta_4, data_hora]
