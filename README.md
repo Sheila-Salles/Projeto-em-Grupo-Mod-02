@@ -5,7 +5,7 @@ versão = '3.11'
 
 Contexto:
 
-     Nossa equipe recebeu uma nova solicitação de projeto! Dessa vez para desenvolver uma pesquisa digital com a população de várias cidades do Brasil. Para isso, será necessário armazenar os dados dessa pesquisa em um arquivo .csv para utilização em análises futuras. A pesquisa será feita a partir de um levantamento ativo, realizado pelos funcionários da empresa que irão sair com o projeto nas ruas para coletar as respostas.
+   Nossa equipe recebeu uma nova solicitação de projeto! Dessa vez para desenvolver uma pesquisa digital com a população de várias cidades do Brasil. Para isso, será necessário armazenar os dados dessa pesquisa em um arquivo .csv para utilização em análises futuras. A pesquisa será feita a partir de um levantamento ativo, realizado pelos funcionários da empresa que irão sair com o projeto nas ruas para coletar as respostas.
 
 Detalhes do projeto:
 
@@ -28,10 +28,10 @@ utilizando o Excel.
 
 Como usar:
 
-     Ao executar o arquivo main.py o questionário se iniciará, o usuário deverá inserir a idade e gênero e responder as questões com o teclado numérico, ao final do processo, o usuário escolherá entre continuar, digitando uma idade nova ou inseririndo 00 para finarlizar e salvar o arquivo csv.
+   Ao executar o arquivo main.py o questionário se iniciará, o usuário deverá inserir a idade e gênero e responder as questões com o teclado numérico, ao final do processo, o usuário escolherá entre continuar, digitando uma idade nova ou inseririndo 00 para finarlizar e salvar o arquivo csv.
 
 
-     Empresa: Tecnologia e Dados   
+   Empresa: Tecnologia e Dados   
 
 Digite a idade: 21
 Digite o gênero: Feminino
