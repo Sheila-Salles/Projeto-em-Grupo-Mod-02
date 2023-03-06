@@ -1,3 +1,8 @@
+Projeto em Grupo - Módulo 2 - – Quero os dados na minha mesa  
+Data de criação: 01/03/2023                                   
+Equipe: Diego, Erick, Robson, Sheila                          
+versão = '3.11'     
+
 Contexto:
 
 Nossa equipe recebeu uma nova solicitação de projeto! Dessa vez para desenvolver uma pesquisa digital com a população de várias cidades do Brasil. Para isso, será necessário armazenar os dados dessa pesquisa em um arquivo .csv para utilização em análises futuras. A pesquisa será feita a partir de um levantamento ativo, realizado pelos funcionários da empresa que irão sair com o projeto nas ruas para coletar as respostas.
@@ -13,7 +18,9 @@ respostas informadas nas linhas do .csv até que a idade de 00 seja informada, e
 ficar inserindo novas respostas por quanto tempo for necessário (quando a idade 00 é informada
 o projeto para de executar).
 ⇨ Com os dados preenchidos no .csv o grupo deve realizar uma exibição simples dos resultados
-utilizando o Excel 
+utilizando o Excel.
+
+
 
 
 Como usar:
