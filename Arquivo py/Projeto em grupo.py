@@ -8,17 +8,19 @@ class Entrevista:
 
     def dados(self):
         print("\n     Empresa: Tecnologia e Dados   \n")
-        idade = (input("Digite a idade: "))
-           
+        idade = (input("Digite a idade: "))  
         while idade != "00":
-            genero = input("Digite o gênero: ")
-            pergunta_1 = int(input("Você costuma ouvir música por estações de rádio? \n1. Sim\n2. Não\n3. Poucas vezes\nDigite: "))                 
-            if (pergunta_1 == 1):
-                pergunta_1 = ("Sim")
-            elif (pergunta_1 == 2):
-                pergunta_1 = ("Não")
-            elif (pergunta_1 == 3):
-                pergunta_1=("Poucas vezes")    
+            genero = input("Digite o gênero: ") 
+            try:
+                pergunta_1 = int(input("Você costuma ouvir música por estações de rádio? \n1. Sim\n2. Não\n3. Poucas vezes\nDigite: "))                 
+                if (pergunta_1 == 1):
+                    pergunta_1 = ("Sim")
+                elif (pergunta_1 == 2):
+                    pergunta_1 = ("Não")
+                elif (pergunta_1 == 3):
+                    pergunta_1=("Poucas vezes")
+            except:
+                continue    
             pergunta_2 = int(input("Você reserva um tempo do seu dia para ouvir suas músicas favoritas? \n1. Sim\n2. Não\n3. Poucas vezes \nDigite: "))
             if (pergunta_2 == 1):
                 pergunta_2 = ("Sim")
