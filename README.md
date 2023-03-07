@@ -31,13 +31,20 @@ Como usar:
    Ao executar o arquivo main.py o questionário se iniciará, o usuário deverá inserir a idade e gênero e responder as questões com o teclado numérico, ao final do processo, o usuário escolherá entre continuar, digitando uma idade nova ou inseririndo 00 para finarlizar e salvar o arquivo csv.
 
 
-     Empresa: Tecnologia e Dados   
+
+     Dados Verdes: Tecnologia e Dados   
 
 Digite a idade: 21
-Digite o gênero: f
+
+Selecione o gênero: 
+1. Feminino         
+2. Masculino        
+3. Outros 
+
+Opção: 1
+
 Você costuma ouvir música por estações de rádio? 
 1. Sim
 2. Não
 3. Poucas vezes
-
 Opção: 
