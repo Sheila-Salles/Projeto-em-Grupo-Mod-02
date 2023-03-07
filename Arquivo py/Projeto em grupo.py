@@ -10,7 +10,17 @@ class Entrevista:
         print("\n     Empresa: Tecnologia e Dados   \n")
         idade = (input("Digite a idade: "))  
         while idade != "00":
-            genero = input("Digite o gênero: ") 
+            try:
+                genero = int(input("Selecione o gênero: \n1. Feminino \n2. Masculino \n3. Outros \nOpção: "))
+                if (genero == 1):
+                    genero = ("Feminino")
+                elif (genero == 2):
+                    genero = ("Masculino")
+                elif (genero == 3):
+                    genero=("Outros")                  
+            except:
+                print("Opção inválida. Tente novamente.")
+                continue                                
             try:
                 pergunta_1 = int(input("Você costuma ouvir música por estações de rádio? \n1. Sim\n2. Não\n3. Poucas vezes\nOpção: "))                 
                 if (pergunta_1 == 1):
@@ -54,12 +64,14 @@ class Entrevista:
                     pergunta_4=("Poucas vezes")
             except:
                 print("Opção inválida. Tente novamente.")
-                continue                
+                continue
+                            
             now = datetime.datetime.now()
             data_hora = now.strftime("%d/%m/%Y %H:%M:%S")
             lista = [idade, genero, pergunta_1, pergunta_2, pergunta_3, pergunta_4, data_hora]
             self.data.append(lista)
             idade = input("Digite a idade ou '00' para encerrar: ")
+            
             
     def salvar_arquivo_csv(self, nome):
         with open(nome, "w", newline="") as arquivo:
