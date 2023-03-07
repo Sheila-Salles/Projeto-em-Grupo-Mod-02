@@ -71,8 +71,7 @@ class Entrevista:
             lista = [idade, genero, pergunta_1, pergunta_2, pergunta_3, pergunta_4, data_hora]
             self.data.append(lista)
             idade = input("Digite a idade ou '00' para encerrar: ")
-            
-            
+                   
     def salvar_arquivo_csv(self, nome):
         with open(nome, "w", newline="") as arquivo:
             writer = csv.writer(arquivo)
