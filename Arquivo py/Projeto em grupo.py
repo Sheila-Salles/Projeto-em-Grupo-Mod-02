@@ -66,4 +66,4 @@ class Entrevista:
             writer = csv.writer(arquivo)
             writer.writerow(self.cabecalho)
             writer.writerows(self.data)
-        print(f"{len(self.data)} dado(s) coletado(s) para pesquisa. O arquivo foi salvo como {nome}")
+        print(f"{len(self.data)} dado(s) coletado(s) para a pesquisa. O arquivo foi salvo como {nome}")
