@@ -7,7 +7,7 @@ class Entrevista:
         self.cabecalho = ["Idade", "Gênero", "Pergunta_1", "Pergunta_2", "Pergunta_3", "Pergunta_4","Data e Hora"]
 
     def dados(self):
-        print("\n     Empresa: Tecnologia e Dados   \n")
+        print("\n     Dados Verdes Tecnologia e Dados   \n")
         idade = (input("Digite a idade: "))  
         while idade != "00":
             try:
