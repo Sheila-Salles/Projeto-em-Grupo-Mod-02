@@ -29,8 +29,14 @@
 ########################################################################################################################
 
 from Projeto import Entrevista
+from Projeto import Pesquisa
 
 perguntas = Entrevista()
-perguntas.dados()
+perguntas.__init__()
+
+perguntas2 = Pesquisa()
+perguntas2.dados()
+
 nome_do_arquivo = input("Digite o nome do arquivo .csv para guardar. (ex: ""arquivo.csv""): ")
-perguntas.salvar_arquivo_csv(nome_do_arquivo)
+
+perguntas2.salvar_arquivo_csv(nome_do_arquivo)
