@@ -5,7 +5,8 @@ class Entrevista:
     def __init__(self):
         self.data = []
         self.cabecalho = ["Idade", "Gênero", "Pergunta_1", "Pergunta_2", "Pergunta_3", "Pergunta_4","Data e Hora"]
-        
+
+class Pesquisa(Entrevista):
     def dados(self):
         print("\n     Dados Verdes Tecnologia e Dados   \n")
         idade = (input("Digite a idade: "))  
@@ -71,8 +72,8 @@ class Entrevista:
             lista = [idade, genero, pergunta_1, pergunta_2, pergunta_3, pergunta_4, data_hora]
             self.data.append(lista)
             idade = input("Digite a idade ou '00' para encerrar: ")
-                   
-    def salvar_arquivo_csv(self, nome):
+
+    def salvar_arquivo_csv(self,nome):
         with open(nome, "w",encoding="utf-8", newline="") as arquivo:
             writer = csv.writer(arquivo)
             writer.writerow(self.cabecalho)
