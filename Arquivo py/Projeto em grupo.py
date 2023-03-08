@@ -5,9 +5,7 @@ class Entrevista:
     def __init__(self):
         self.data = []
         self.cabecalho = ["Idade", "Gênero", "Pergunta_1", "Pergunta_2", "Pergunta_3", "Pergunta_4","Data e Hora"]
-
-
-
+        
     def dados(self):
         print("\n     Dados Verdes Tecnologia e Dados   \n")
         idade = (input("Digite a idade: "))  
