@@ -1,16 +1,16 @@
 import csv
 import datetime
 
-class Entrevista:
+class Entrevista:# Cabeçalho fixo para adicionar ao CSV
     def __init__(self):
         self.data = []
         self.cabecalho = ["Idade", "Gênero", "Pergunta_1", "Pergunta_2", "Pergunta_3", "Pergunta_4","Data e Hora"]
 
-class Pesquisa(Entrevista):
-    def dados(self):
+class Pesquisa(Entrevista): #Classe para realizar a entrevista.
+    def dados(self): # Função que realiza o questionário inicial.
         print("\n     Dados Verdes Tecnologia e Dados   \n")
         idade = (input("Digite a idade: "))  
-        while idade != "00":
+        while idade != "00": # Estrutura de repetição com tratamento de exceção.
             try:
                 genero = int(input("Selecione o gênero: \n1. Feminino \n2. Masculino \n3. Outros \nOpção: "))
                 if (genero == 1):
@@ -67,13 +67,13 @@ class Pesquisa(Entrevista):
                 print("Opção inválida. Tente novamente.")
                 continue
                             
-            now = datetime.datetime.now()
+            now = datetime.datetime.now()#Variável para adicionar data e hora
             data_hora = now.strftime("%d/%m/%Y %H:%M:%S")
             lista = [idade, genero, pergunta_1, pergunta_2, pergunta_3, pergunta_4, data_hora]
             self.data.append(lista)
             idade = input("Digite a idade ou '00' para encerrar: ")
 
-    def salvar_arquivo_csv(self,nome):
+    def salvar_arquivo_csv(self,nome):# Função para guardar o arquivo CSV
         with open(nome, "w",encoding="utf-8", newline="") as arquivo:
             writer = csv.writer(arquivo)
             writer.writerow(self.cabecalho)
